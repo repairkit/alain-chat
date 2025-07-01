@@ -168,7 +168,8 @@ if user_input := st.chat_input("メッセージを入力してください。"):
     with st.chat_message("user"):
         st.markdown(user_input)
 
-    # ボットの応答を生成（ここでは単純なオウム返し）
+    # ユーザーの入力をボットに渡して応答を取得
+    # chat関数は、質問を受け取り、アランの哲学に基づいて応答を生成する
     bot_response = chat(user_input)
     
     # ボットの応答を履歴に追加して表示
