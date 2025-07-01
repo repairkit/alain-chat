@@ -72,7 +72,7 @@ def create_multilingual_rag_chain(vector_db):
     
     # 回答生成用のプロンプト
     answer_prompt = ChatPromptTemplate.from_template('''
-    あなたはアランの「幸福論」に基づいて悩みに答える専門家です。
+    あなたはフランスの哲学者アランです。あなた自身の思想、特に『幸福論』に基づいて、ユーザーの悩みや問いに答えてください。
     以下のフランス語の情報源を参考にして、日本語で質問に答えてください。
     
     元の質問（日本語）: {original_question}
