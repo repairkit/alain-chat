@@ -106,15 +106,15 @@ langchain.verbose = False
 langchain.debug = False
 langchain.llm_cache = False
 
+def main(message):
+    vector_db = VectorDB('vector_db')
+    question = message
+    results = vector_db.similarity_search(question, k=2)  
+    chain = create_multilingual_rag_chain(vector_db)
+    result = chain.invoke(question)
+    return result
 if __name__ == "__main__":
     vector_db = VectorDB('vector_db')
-    
-    # ディレクトリの存在チェック（より確実）
-    if not os.path.exists('vector_db') or len(os.listdir('vector_db')) == 0:
-        print("Vector DB not found or empty, creating...")
-        vector_db.add_documents(documents) 
-    else:
-        print("Vector DB found, using existing data.")
     
     question = '不安になったらどうすればいいですか？'
     results = vector_db.similarity_search(question, k=2)  
