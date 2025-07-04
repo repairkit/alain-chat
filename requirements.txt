@@ -1,32 +1,40 @@
 # Core dependencies
-python-dotenv>=1.0.1
-streamlit>=1.29.0
+python-dotenv>=1.1.1
+streamlit>=1.46.1
 
 # LangChain ecosystem
-langchain>=0.2.16
-langchain-core>=0.2.40
-langchain-community>=0.2.16
-langchain-openai>=0.1.23
-langchain-chroma>=0.1.4
-langchain-unstructured>=0.1.4
+langchain>=0.3.26
+langchain-core>=0.3.67
+langchain-community>=0.3.26
+langchain-openai>=0.3.27
+langchain-chroma>=0.2.4
+langchain-unstructured>=0.1.6
 
 # AI/ML dependencies
-openai>=1.44.0
-chromadb>=0.5.6
+openai>=1.93.0
+chromadb>=1.0.13
 
 # Document processing
-unstructured[doc]>=0.15.13
-python-docx>=1.1.2
+unstructured[doc]>=0.18.2
+python-docx>=1.2.0
 python-magic>=0.4.27
 
 # Server dependencies
-fastapi>=0.104.1
-uvicorn[standard]>=0.24.0
-pydantic>=2.8.2
+fastapi>=0.115.14
+uvicorn[standard]>=0.35.0
+pydantic>=2.11.7
+
+# Security and middleware
+python-multipart>=0.0.9
+python-jose[cryptography]>=3.3.0
 
 # Additional utilities
-requests>=2.32.3
+requests>=2.32.4
+httpx>=0.28.1
 
 # Development and testing
-pytest>=7.4.0
-pytest-asyncio>=0.21.0
+pytest>=8.4.1
+pytest-asyncio>=1.0.0
+
+# Production utilities
+gunicorn>=22.0.0

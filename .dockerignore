@@ -1,0 +1,42 @@
+# Python関連
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# 開発環境ファイル
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDEファイル
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git関連
+.git/
+.gitignore
+
+# Dockerファイル
+Dockerfile
+.dockerignore
+
+# ログファイル
+*.log
+
+# demo フォルダ（開発用）
+demo/
+
+# その他の不要なファイル
+.DS_Store
+Thumbs.db
+current_requirements.txt
