@@ -5,6 +5,8 @@ import logging
 import uvicorn
 from fastapi.middleware.cors import CORSMiddleware
 
+import chat  # chat.pyからのインポート
+
 # ログ設定
 logger = logging.getLogger(__name__)
 
